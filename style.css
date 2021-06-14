@@ -1,0 +1,144 @@
+body {
+    position:absolute;
+    width: 100%;
+    height: 100%; 
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+
+
+}
+.div1 {
+    top: -350px;
+    left: -100px;
+    position: absolute;
+    height: 850px;
+    width: 850px;
+    border-radius: 80%;
+    background: linear-gradient(10deg ,hsl(185, 75%, 39%) ,rgb(1, 196, 196));
+    z-index: -1;
+
+}   
+.div2 {
+    position: absolute;
+    bottom: -450px;
+    left: 700px;
+    height: 850px;
+    width: 1050px;
+    border-radius: 400%;
+    background: linear-gradient(95deg ,rgb(1, 196, 196),hsl(185, 75%, 39%))
+}
+.div3 {
+    position: absolute;
+    top: 20%;
+    right: 42%;
+    height: 370px;
+    width: 300px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: white;
+} 
+.top-div {
+ background-image: url("./Capture.PNG") ;
+ background-size: cover; 
+ width: 100%;
+ height: 40%;
+}
+.btm-div {
+ background-color: white;
+ background-size: cover; 
+ width: 100%;
+ height: 60%;
+ text-align: center;
+}
+.div3 img {
+    position:absolute;
+    z-index:1;
+    top:25%;
+    left:33%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.para  {
+     margin-top: 60px;
+     margin-bottom: 0;
+    }
+
+.btm-div p:last-of-type {
+color:  hsl(0, 0%, 59%);
+
+
+
+}
+
+.stats {
+ display: flex;
+ justify-content: space-evenly;
+ 
+}
+.stats p {
+font-weight: 100;
+font-size: 10px;
+margin: 1px;
+color:  hsl(0, 0%, 59%);
+
+}
+/* 
+@media only screen and (max-width: 385px) {
+    .div1{
+        height: 615px;
+        width: 705px;
+        bottom: -190px;
+        top: -200px;
+        left: -310px;
+        
+    };
+    }
+
+    @media only screen and (max-width: 385px) { 
+        .div2 {
+            height: 620px;
+        width: 600px;
+        bottom: -350px;
+                left: 330px;     
+        };
+        
+    }
+    @media only screen and (max-width: 385px) {
+    .div3 {
+        right: -45%;
+        top: 35%;
+    }
+
+};
+
+@media only screen and (max-width: 1440px) {
+    .div1{
+        height: 615px;
+        width: 705px;
+        bottom: -190px;
+        top: -200px;
+        left: -310px;
+        
+    };
+    }
+
+    @media only screen and (max-width: 1440px) { 
+        .div2 {
+            height: 620px;
+        width: 600px;
+        bottom: -350px;
+                left: 330px;     
+        };
+        
+    }
+    @media only screen and (max-width: 1440px) {
+    .div3 {
+        right: -45%;
+        top: 35%;
+    }
+
+}; */
+
+
+
