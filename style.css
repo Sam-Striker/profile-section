@@ -1,144 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+ :root {
+    --paragraph-colors: hsl(0, 0%, 59%);
+    --circle-color: hsl(185, 75%, 39%);
+}
+
+* {
+    font-family: 'kumbh sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    position:absolute;
     width: 100%;
-    height: 100%; 
-    background-color: hsl(185, 75%, 39%);
+    height: 100%;
+    background-color: var(--circle-color);
     overflow: hidden;
-
-
 }
-.div1 {
-    top: -350px;
-    left: -100px;
+
+hr {
+    opacity: 0.2;
+    margin-top: 1rem;
+}
+
+.circle {
+    top: -180px;
+    left: -215px;
     position: absolute;
-    height: 850px;
-    width: 850px;
+    height: 425px;
+    width: 425px;
     border-radius: 80%;
-    background: linear-gradient(10deg ,hsl(185, 75%, 39%) ,rgb(1, 196, 196));
+    background: linear-gradient(8deg, var(--circle-color), rgb(1, 196, 196));
     z-index: -1;
-
-}   
-.div2 {
-    position: absolute;
-    bottom: -450px;
-    left: 700px;
-    height: 850px;
-    width: 1050px;
-    border-radius: 400%;
-    background: linear-gradient(95deg ,rgb(1, 196, 196),hsl(185, 75%, 39%))
 }
-.div3 {
+
+.circle::after {
+    content: '';
     position: absolute;
-    top: 20%;
-    right: 42%;
-    height: 370px;
-    width: 300px; 
+    bottom: -550px;
+    left: 360px;
+    height: 455px;
+    width: 455px;
+    border-radius: 50% 50% 50% 50%;
+    background: linear-gradient(95deg, rgb(1, 196, 196), var(--circle-color))
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    height: 350px;
+    width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 18px;
     overflow: hidden;
     background-color: white;
-} 
-.top-div {
- background-image: url("./Capture.PNG") ;
- background-size: cover; 
- width: 100%;
- height: 40%;
+    z-index: 2;
 }
-.btm-div {
- background-color: white;
- background-size: cover; 
- width: 100%;
- height: 60%;
- text-align: center;
+
+.image-div {
+    background-image: url("Capture.PNG");
+    background-size: cover;
+    width: 100%;
+    height: 35%;
 }
-.div3 img {
-    position:absolute;
-    z-index:1;
-    top:25%;
-    left:33%;
+
+.white-div {
+    background-color: white;
+    background-size: cover;
+    width: 100%;
+    height: 65%;
+    text-align: center;
+    line-height: 1;
+}
+
+.container img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    align-self: center;
+    z-index: 1;
+    top: 17%;
+    left: 30%;
     border-radius: 50%;
     border: 5px solid white;
 }
-.para  {
-     margin-top: 60px;
-     margin-bottom: 0;
-    }
 
-.btm-div p:last-of-type {
-color:  hsl(0, 0%, 59%);
+.para {
+    padding-top: 5rem;
+    font-size: 18px;
+}
 
-
-
+.white-div p:last-of-type {
+    color: hsl(0, 0%, 59%);
+    margin-top: 10px;
 }
 
 .stats {
- display: flex;
- justify-content: space-evenly;
- 
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
 }
+
 .stats p {
-font-weight: 100;
-font-size: 10px;
-margin: 1px;
-color:  hsl(0, 0%, 59%);
-
+    font-weight: 100;
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
 }
-/* 
-@media only screen and (max-width: 385px) {
-    .div1{
-        height: 615px;
-        width: 705px;
-        bottom: -190px;
-        top: -200px;
-        left: -310px;
-        
-    };
+
+small {
+    font-size: 18px;
+    color: var(--paragraph-colors);
+}
+
+@media all and (min-width: 376px) {
+    * {
+        font-family: 'kumbh sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-
-    @media only screen and (max-width: 385px) { 
-        .div2 {
-            height: 620px;
-        width: 600px;
-        bottom: -350px;
-                left: 330px;     
-        };
-        
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: var(--circle-color);
+        overflow: hidden;
     }
-    @media only screen and (max-width: 385px) {
-    .div3 {
-        right: -45%;
-        top: 35%;
+    hr {
+        opacity: 0.2;
+        margin-top: 1rem;
     }
-
-};
-
-@media only screen and (max-width: 1440px) {
-    .div1{
-        height: 615px;
-        width: 705px;
-        bottom: -190px;
-        top: -200px;
-        left: -310px;
-        
-    };
+    .circle {
+        top: -350px;
+        left: -100px;
+        position: absolute;
+        height: 750px;
+        width: 750px;
+        border-radius: 80%;
+        background: linear-gradient(7deg, var(--circle-color), rgb(1, 196, 196));
+        z-index: -1;
     }
-
-    @media only screen and (max-width: 1440px) { 
-        .div2 {
-            height: 620px;
-        width: 600px;
-        bottom: -350px;
-                left: 330px;     
-        };
-        
+    .circle::after {
+        content: '';
+        position: absolute;
+        bottom: -750px;
+        left: 800px;
+        height: 750px;
+        width: 750px;
+        border-radius: 50% 50% 50% 50%;
+        background: linear-gradient(95deg, rgb(1, 196, 196), var(--circle-color))
     }
-    @media only screen and (max-width: 1440px) {
-    .div3 {
-        right: -45%;
-        top: 35%;
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 25%;
+        left: 38%;
+        height: 350px;
+        width: 350px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 18px;
+        overflow: hidden;
+        background-color: white;
+        z-index: 2;
     }
-
-}; */
-
-
-
+    .image-div {
+        background-image: url("Capture.PNG");
+        background-size: cover;
+        width: 100%;
+        height: 40%;
+    }
+    .white-div {
+        background-color: white;
+        background-size: cover;
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        line-height: 1;
+    }
+    .container img {
+        position: absolute;
+        z-index: 1;
+        top: 25%;
+        left: 33%;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+    .white-div p:last-of-type {
+        color: hsl(0, 0%, 59%);
+        margin-top: 10px;
+    }
+    .stats {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .stats p {
+        font-weight: 100;
+        font-size: 10px;
+        color: hsl(0, 0%, 59%);
+    }
+    small {
+        color: var(--paragraph-colors);
+    }
+}
